@@ -46,11 +46,11 @@ public class DateTimeFunctions {
 	 * Return the String in the format: "Years-20:Months-5:Days-1"
 	 */
 	public static String getTimeDifference(LocalDate date1, LocalDate date2) {
-    Period diff = date1.until(date2); // Getting the period between two dates
-    int diffYears = diff.getYears();
-    int diffMonths = diff.getMonths();
-    int diffDays = diff.getDays();
-    return "Years-" + diffYears + ":Months-" + diffMonths + ":Days-" + diffDays;
+		Period diff = date1.until(date2); // Getting the period between two dates
+		int diffYears = diff.getYears();
+		int diffMonths = diff.getMonths();
+		int diffDays = diff.getDays();
+		return "Years-" + diffYears + ":Months-" + diffMonths + ":Days-" + diffDays;
 	}
 
 	public static void main(String[] args) {
